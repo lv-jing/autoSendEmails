@@ -1,4 +1,4 @@
-function fn(weatherData, lifeData, word, imgurl, lovingDays) {
+function fn(weatherData, lifeData, word, imgurl, lovingDays,content) {
   const { daily: weatherDataDaily } = weatherData;
   const { daily } = lifeData;
 
@@ -13,7 +13,8 @@ function fn(weatherData, lifeData, word, imgurl, lovingDays) {
       <div>
         <!-- 天数 -->
         <div>
-          <p>今天是我们在一起的第${lovingDays}天！</p>
+          <p>今天是我们在一起的第${lovingDays}天！我依然深爱着你</p>
+          <p>${content}</p>  
         </div>
         <!-- 图片 -->
         <div>
